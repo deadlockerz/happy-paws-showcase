@@ -3,31 +3,30 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-primary-foreground py-12 md:py-16">
+    <footer className="bg-card border-t border-border py-12 md:py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
               <Dog className="w-8 h-8 text-primary" />
-              <span className="font-display text-2xl font-semibold">
-                PawPals
+              <span className="font-display text-2xl font-semibold text-foreground">
+                Dog Farm Himachal
               </span>
             </Link>
-            <p className="text-primary-foreground/70 text-sm mb-4">
-              Finding loving homes for adorable dogs since 2020. Your next best
-              friend is waiting!
+            <p className="text-muted-foreground text-sm mb-4">
+              Premium dog breeding and adoption in the beautiful hills of Himachal Pradesh. Your next best friend is waiting!
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
                 <a
                   href="/#gallery"
-                  className="text-sm text-primary-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   Our Dogs
                 </a>
@@ -35,17 +34,25 @@ const Footer = () => {
               <li>
                 <a
                   href="/#booking"
-                  className="text-sm text-primary-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   Book a Visit
                 </a>
               </li>
               <li>
-                <Link
-                  to="/admin"
-                  className="text-sm text-primary-foreground/70 hover:text-primary transition-colors"
+                <a
+                  href="/#contact"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Admin Portal
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <Link
+                  to="/auth"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Login / Register
                 </Link>
               </li>
             </ul>
@@ -53,40 +60,40 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4">Contact Us</h4>
+            <h4 className="font-semibold text-foreground mb-4">Contact Us</h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-sm text-primary-foreground/70">
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
-                123 Pet Lane, Dog City
+                Near Mall Road, Shimla, HP
               </li>
-              <li className="flex items-center gap-2 text-sm text-primary-foreground/70">
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary" />
-                (555) 123-4567
+                +91 98765 43210
               </li>
-              <li className="flex items-center gap-2 text-sm text-primary-foreground/70">
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                hello@pawpals.com
+                hello@dogfarmhimachal.com
               </li>
             </ul>
           </div>
 
           {/* Hours */}
           <div>
-            <h4 className="font-semibold mb-4">Visit Hours</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/70">
+            <h4 className="font-semibold text-foreground mb-4">Visit Hours</h4>
+            <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Monday - Friday: 9am - 6pm</li>
               <li>Saturday: 10am - 5pm</li>
-              <li>Sunday: 12pm - 4pm</li>
+              <li>Sunday: 10am - 4pm</li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-primary-foreground/50">
-            © 2024 PawPals. All rights reserved.
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-muted-foreground">
+            © 2024 Dog Farm Himachal. All rights reserved.
           </p>
-          <p className="text-sm text-primary-foreground/50 flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary" /> for dog lovers
+          <p className="text-sm text-muted-foreground flex items-center gap-1">
+            Made with <Heart className="w-4 h-4 text-primary" /> in Himachal Pradesh
           </p>
         </div>
       </div>
