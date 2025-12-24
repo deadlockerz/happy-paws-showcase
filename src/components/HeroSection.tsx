@@ -10,10 +10,10 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Beautiful golden retriever"
+          alt="Beautiful dog at Dog Farm Himachal"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/30 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
       </div>
 
       {/* Content */}
@@ -24,8 +24,8 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-primary-foreground text-sm font-medium mb-6 backdrop-blur-sm">
-              Welcome to PawPals
+            <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-foreground text-sm font-medium mb-6 backdrop-blur-sm border border-primary/30">
+              Welcome to Dog Farm Himachal
             </span>
           </motion.div>
 
@@ -33,21 +33,21 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground mb-6 leading-tight"
+            className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 leading-tight"
           >
             Find Your Perfect
             <br />
-            <span className="text-primary">Furry Companion</span>
+            <span className="text-gradient">Furry Companion</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-xl mx-auto"
+            className="text-lg md:text-xl text-foreground/80 mb-10 max-w-xl mx-auto"
           >
-            Discover our adorable dogs waiting for loving homes. Book a visit
-            today and meet your new best friend.
+            Discover our adorable dogs in the beautiful hills of Himachal Pradesh. 
+            Book a visit today and meet your new best friend.
           </motion.p>
 
           <motion.div
@@ -66,7 +66,7 @@ const HeroSection = () => {
               <Button
                 variant="outline"
                 size="xl"
-                className="bg-background/10 border-primary-foreground/30 text-primary-foreground hover:bg-background/20 backdrop-blur-sm"
+                className="border-foreground/30 text-foreground hover:bg-foreground/10 backdrop-blur-sm"
               >
                 <Calendar className="w-5 h-5" />
                 Book a Visit
@@ -86,9 +86,9 @@ const HeroSection = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 rounded-full border-2 border-primary-foreground/50 flex items-start justify-center p-2"
+          className="w-6 h-10 rounded-full border-2 border-foreground/50 flex items-start justify-center p-2"
         >
-          <div className="w-1 h-2 bg-primary-foreground/50 rounded-full" />
+          <div className="w-1 h-2 bg-foreground/50 rounded-full" />
         </motion.div>
       </motion.div>
     </section>
